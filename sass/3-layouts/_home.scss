@@ -1,0 +1,23 @@
+@import "breakpoint";
+.content {
+	width: $large-screen;
+	@include outer-container;
+	margin: 0 auto;
+}
+
+@include breakpoint(800px) {
+	aside.sidebar1 {
+	@include span-columns(3);
+
+}
+aside.sidebar2 {
+	@include span-columns(3);
+
+
+}
+article.main {
+	@include span-columns(6);
+
+
+}
+}
